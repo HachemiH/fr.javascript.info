@@ -1,46 +1,4 @@
-<?xml version="1.0" ?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/SVG/DTD/svg10.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xlink="http://www.w3.org/1999/xlink" width="340" height="360">
-<!--+ no-optimize -->
-<!--
-@see
-http://www.learnsvg.com/books/learnsvg/html/bitmap/chapter04/page04-1.php
-http://apike.ca/prog_svg_paths.html
-http://www.the-art-of-web.com/css/css-animation/
-http://srufaculty.sru.edu/david.dailey/svg/curve.svg
-http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html#path_C
--->
-<defs>
-<pattern id="Pat01" width="10" height="10" patternUnits="userSpaceOnUse">
-	<rect width="10" height="10" fill="#FFFFFF" stroke="#000000" stroke-width="0.1"/>
-</pattern>
-</defs>
-
-
-<rect x="20" y="50" width="300" height="300" fill="url(#Pat01)"/>
-
-
-<path d="M20,50 H320 V350 H20 Z" fill="none" stroke="none" stroke-width="0.5" stroke-dasharray="2 2"/>
-
-
-<path fill="none" id="control-path" stroke="#E8C48E"/>
-<path stroke="red" fill="none" id="bezier-path" stroke-width="1.2"/>
-
-<path d="" fill="none" id="t-path-template"/>
-
-<svg x="0" y="0" id="p-template">
-<circle r="4" fill="white" stroke="#E8C48E" stroke-width="1" cx="20" cy="20" style="cursor: pointer"/>
-<text x="12" y="12" style="font-size:16px;font-weight:bold">1</text>
-</svg>
-
-<circle r="4" fill="red" stroke="red" id="marker" stroke-width="1" cx="-10" cy="-10"/>
-
-<svg>
-<image xlink:href="play.png" x="5" y="5" style="cursor:pointer" width="30" height="30" id="run-button"/>
-<text x="38" y="27" style="font-size:18px;font-family:'DejaVu Sans Mono', 'Lucida Console', 'Menlo', 'Monaco', Lucida Console, sans-serif">t:<tspan id="t-value">1</tspan></text>
-</svg>
-
-<script><![CDATA[
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace" width="340" height="360"><defs><pattern id="Pat01" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#FFF" stroke="#000" stroke-width=".1"/></pattern></defs><rect width="300" height="300" x="20" y="50" fill="url(#Pat01)"/><path fill="none" stroke="none" stroke-dasharray="2 2" stroke-width=".5" d="M20,50 H320 V350 H20 Z"/><path id="control-path" fill="none" stroke="#E8C48E"/><path id="bezier-path" fill="none" stroke="red" stroke-width="1.2"/><path id="t-path-template" fill="none"/><svg id="p-template" x="0" y="0"><circle cx="20" cy="20" r="4" fill="#fff" stroke="#E8C48E" stroke-width="1" cursor="pointer"/><text x="12" y="12" font-size="16" font-weight="bold">1</text></svg><circle id="marker" cx="-10" cy="-10" r="4" fill="red" stroke="red" stroke-width="1"/><svg><image id="run-button" width="30" height="30" x="5" y="5" cursor="pointer" xlink:href="play.png"/><text x="38" y="27" font-family="'DejaVu Sans Mono', 'Lucida Console', 'Menlo', 'Monaco', Lucida Console, sans-serif" font-size="18">t:<tspan id="t-value">1</tspan></text></svg><script><![CDATA[
 	let xmlns = "http://www.w3.org/2000/svg";
 	let xlinkns  = "http://www.w3.org/1999/xlink";
 
@@ -273,5 +231,4 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html#path_C
 	drawPoints(points);
 
 
-//]]></script>
-</svg>
+//]]></script></svg>
